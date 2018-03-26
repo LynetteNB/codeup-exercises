@@ -27,7 +27,11 @@ public class Test {
         }
         System.out.println("Flipped Case: " + StringUtils.swapCase(input));
         System.out.println("Reversed: " + StringUtils.reverse(input));
+        System.out.println("Has Vowels? " + hasVowels(input));
 
 
+    }
+    public static boolean hasVowels(String input) {
+        return StringUtils.containsAny(input, 'a', 'e', 'i', 'o', 'u');
     }
 }
